@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: 落尘的博客
+subtitle: '真正的英雄主义，是在明白生活的本质之后，依旧能够热爱生活。'
+description: '越努力越幸运'
 keywords:
-author: John Doe
-language: en
+author: 落尘
+language: zh-CN
 timezone: ''
 
 # URL
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -99,9 +99,33 @@ ignore:
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 theme: next
+# theme: nexmoe
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repository: git@github.com:mikilerGit/mikilergit.github.io.git
   branch: main
+
+# Local_search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+  
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  model:
+    # 填写你所需要的看板娘名称
+    use: live2d-widget-model-wanko
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true

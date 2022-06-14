@@ -2,10 +2,8 @@
 title: hexo
 date: 2022-03-23 22:15:21
 tags: hexo
-categories: 0-hexo
+categories: hexo
 ---
-**<!--more-->**
-
 # hexo+github博客搭建
 
 ## 环境搭建
@@ -136,11 +134,17 @@ mikilergit.github.io   (必须有readme.md)
    #scheme: Gemini
    ```
 
- 6. [主题风格配置](https://www.cnblogs.com/lfri/p/12219831.html)
+ 7. [主题风格配置](https://www.cnblogs.com/lfri/p/12219831.html)
 
     ```
+    显示微博 github 邮箱
+    全局搜索
+    启用RSS订阅博客更新
+    fancybox：图片显示
     回到顶部按钮显示百分比
     头像
+    Live2d看板娘
+    设置文章封面图片
     去掉顶部黑线
     language_switcher: true
     powered: false
@@ -150,10 +154,11 @@ mikilergit.github.io   (必须有readme.md)
     设置主页文章折叠
     增加网站运行时间统计
     ```
-
- 7. [内容添加](https://sjq597.github.io/2018/05/15/Hexo%E4%BD%BF%E7%94%A8next-Pisces%E4%B8%BB%E9%A2%98/)
+    
+ 7. 内容添加
 
     ```
+    https://blog.csdn.net/weixin_41287260/article/details/97758641
     修改导航菜单
     创建分类页面
     创建标签页
@@ -163,6 +168,12 @@ mikilergit.github.io   (必须有readme.md)
 
     ```
     https://zhuanlan.zhihu.com/p/280784973
+    ```
+
+ 10. 添加文章图片
+
+    ```
+    https://blog.csdn.net/u010996565/article/details/89196612
     ```
 
  9. 添加发布版权
@@ -205,6 +216,8 @@ hexo g
 
 #上传
 hexo d 
+
+hexo clean && hexo d -g
 ```
 
 ## 网页访问
@@ -222,5 +235,18 @@ hexo new 文章名称
 添加分类属性：
 categories: 类别名称
 注意，一篇博文只能属于一个分类，设置多个分类时将会成为分类嵌套。
+----------------------------------------------------------
+title: hexo
+date: 2022-03-23 22:15:21
+tags: hexo
+categories: hexo
+comment
+```
+
+## 全文阅读
+
+```
+<!-- more -->
+标签前面的是显示文字
 ```
 
